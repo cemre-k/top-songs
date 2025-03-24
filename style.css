@@ -1,35 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
-body{
+body {
     width: 100vw;
     height: 100vh;
     margin: 0;
     padding: 0;
-    background: linear-gradient(176deg ,rgb(227, 106, 124) 0,rgb(227, 106, 124) 330px , white 333px);
-    background-attachment: fixed;
+    background: linear-gradient(176deg, rgb(227, 106, 124) 0, rgb(227, 106, 124) 330px, white 333px);
+    background-attachment: fixed; 
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; 
+    align-items: flex-start;
     overflow-x: hidden;
-   
 }
-.container{
+
+.container {
     position: relative;
     background: white;
     width: 600px;
-    border: 1px solid blue;
-    height:fit-content;
-     
+    height: fit-content;
+    margin-top: 190px; 
+    padding: 20px;
+    box-sizing: border-box;    
+    border-radius: 8px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
 }
-.container::after {
-    content: ""; /* Required for ::after to render */
+
+.container::before {
+    content: "";
     width: 606px;
-    height:500px;    
+    height: 100%;
     background: linear-gradient(#e36a7c, white);
-    position: absolute; 
-    top: 0; 
-    left: -3px; 
-    z-index: -1; /* Place it behind the content */
+    position: absolute;
+    top: 0;
+    left: -3px;
+    z-index: -1;
 }
+
 header{
     position: absolute;
     top:-90px;
