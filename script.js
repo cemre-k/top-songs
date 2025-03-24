@@ -24,9 +24,9 @@ const songsList =document.getElementById("songs");
 songs.forEach(function(song){
     const li =template.cloneNode(true);
     li.style.display="";
-    const img = li.querySelector(".picture img"); // Select the <img> inside .picture
-    img.src = song.picture; // Set the image source
-    img.alt = song.name; // Set the alt text for accessibility
+    const img = li.querySelector(".picture img");
+    img.src = song.picture; 
+    img.alt = song.name; 
 
     li.querySelector(".song-name").textContent = song.name;
     li.querySelector(".artist").textContent = song.artist;
